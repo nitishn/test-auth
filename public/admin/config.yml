@@ -1,6 +1,13 @@
 backend:
-  name: git-gateway
+  name: proxy
   branch: main 
+  proxy_url: /.netlify/functions/auth
+
+auth:
+  provider: auth0
+  domain: dev-0wyo82izwfochqny.us.auth0.com
+  client_id: RUPzyznW1sNhlfpkKHAw2xmzoIQup5EF
+  
 media_folder: public/img
 public_folder: img
 collections:
